@@ -11,7 +11,7 @@
       <div class="messages">
         <small class="text-danger" *ngIf="hasError('name', 'required')">*Campo obrigatório</small>
         <small class="text-danger" *ngIf="hasError('name', 'minlength')">*Tamanho mínimo de 5 caracteres</small>
-        <small class="text-danger" *ngIf="hasError('name', 'maxlength')">*Tamanho mínimo de 25 caracteres</small>
+        <small class="text-danger" *ngIf="hasError('name', 'maxlength')">*Tamanho máximo de 25 caracteres</small>
       </div>
       <label for="password">Descrição</label>
       <textarea type="text" formControlName="description" [class.is-invalid]="isFormFieldInvalid('description')"  cols="30" rows="10"></textarea>
